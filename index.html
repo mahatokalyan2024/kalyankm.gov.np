@@ -10,8 +10,44 @@
             line-height: 1.6;
             background-color: #f4f4f4;
             color: #333;
-            margin: 20px;
-            padding: 20px;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background: #007BFF;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header input {
+            padding: 5px;
+            border: none;
+            border-radius: 5px;
+        }
+        .header button {
+            padding: 5px 10px;
+            border: none;
+            background: white;
+            color: #007BFF;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .nav {
+            display: flex;
+            justify-content: center;
+            background: #333;
+            padding: 10px;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+        .nav a:hover {
+            background: #007BFF;
         }
         .container {
             max-width: 600px;
@@ -19,6 +55,7 @@
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
         }
         h1 {
             text-align: center;
@@ -26,22 +63,35 @@
     </style>
 </head>
 <body>
+    <div class="header">
+        <h2>कल्याण कुमार महतो</h2>
+        <input type="text" placeholder="खोज्नुहोस्...">
+        <button>खोजी</button>
+        <a href="#vet-model-question" style="color: white; text-decoration: none; margin-left: 15px;">Veterinary Model Question</a>
+    </div>
+    <div class="nav">
+        <a href="#education">शिक्षा</a>
+        <a href="#experience">अनुभव</a>
+        <a href="#animal-info">पशु जानकारी</a>
+        <a href="#vet-website">Veterinary वेबसाइट</a>
+        <a href="#contact">सम्पर्क</a>
+    </div>
     <div class="container">
-        <h1>कल्याण कुमार महतो</h1>
+        <h1>व्यक्तिगत विवरण</h1>
         <p><strong>निवास:</strong> मधेश प्रदेश, बटेश्वर गाउँपालिका वडा नं. ३</p>
-        <p><strong>शिक्षा:</strong></p>
-        <ul>
-            <li>२०६६ सालमा SLC - Shree Vinayak English Boarding School, Dhalkewor, Dhanusha (First Division - 64%)</li>
-            <li>११ र १२ कक्षा - Public Youth Campus, Janakpur (Education faculty, Major Nepali, Second Division - 47.10%)</li>
-            <li>२०७०-२०७१ - CTEVT अन्तर्गत VJTA (पशु स्वास्थ्य, १८ महिने) Bala Sundari Secondary School, Bhagwanpur, Siraha (Distinction - 86%)</li>
-            <li>२०७३-२०७४ - श्री जनता माध्यमिक विद्यालय, गिद्धा बेला तीनकोरिया चोक, धनुषा (Animal Science, Second Division)</li>
+        <p><strong>Veterinary सम्बन्धी वेबसाइट विकास:</strong></p>
+        <ul id="vet-website">
+            <li>पशु स्वास्थ्य जानकारी उपलब्ध गराउने</li>
+            <li>पशुपालन सम्बन्धी तालिम तथा लेख प्रकाशित गर्ने</li>
+            <li>पशु रोग निदानका लागि अनलाइन परामर्श सेवा</li>
+            <li>पशुपालक किसानहरूको लागि समुदाय निर्माण</li>
+            <li>पशु औषधि तथा उपकरणहरू सम्बन्धी जानकारी प्रदान गर्ने</li>
+            <li>पशु फार्म व्यवस्थापन तथा उत्पादकत्व वृद्धि गर्ने तरिका सिकाउने</li>
+            <li>पशुपालकहरूको लागि अनलाइन बजार उपलब्ध गराउने</li>
+            <li>पशु पोषण सम्बन्धी जानकारी प्रदान गर्ने</li>
+            <li>सरकारी तथा गैर-सरकारी संस्थासँग समन्वय गरी पशुपालकलाई सहयोग गर्ने</li>
         </ul>
-        <p><strong>व्यावसायिक अनुभव:</strong></p>
-        <ul>
-            <li>२०७३ सालमा OVOT कार्यक्रम अन्तर्गत जिल्ला पशु सेवा कार्यालयबाट करारमा नियुक्त</li>
-            <li>हाल बटेश्वर गाउँपालिकाको पशु सेवा शाखामा कार्यरत</li>
-        </ul>
-        <p><strong>रुचि:</strong> Veterinary सम्बन्धी वेबसाइट विकास</p>
+        <p id="contact"><strong>सम्पर्क:</strong> बटेश्वर गाउँपालिका, धनुषा</p>
     </div>
 </body>
 </html>
